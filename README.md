@@ -6,8 +6,6 @@ This project is a **Linktree/Bento.me-like platform** built using **Node.js, Exp
 ## 🚀 Features
 - **User Authentication** (Register, Login, Forgot Password, Reset Password)
 - **Token-based Authentication (JWT)**
-- **Profile Management**
-- **Link Management** (Add, Update, Delete Links)
 - **Referral System** (Track referred users and rewards)
 - **Secure Password Reset via Email (Nodemailer + SMTP)**
 - **Middleware for Authentication and Error Handling**
@@ -19,7 +17,7 @@ This project is a **Linktree/Bento.me-like platform** built using **Node.js, Exp
 - **Database:** PostgreSQL + Prisma ORM
 - **Authentication:** JWT + Bcrypt.js
 - **Email Service:** Nodemailer + SMTP
-- **API Testing:** Postman
+- **API Testing:** Postman or Thunder Client Extension
 
 ---
 
@@ -79,22 +77,12 @@ linktree-backend/
 | POST   | `/api/forgot-password` | Send reset password email  | ❌ No |
 | POST   | `/api/reset-password`  | Reset password with token  | ❌ No |
 
-### **User Profile & Links**
-| Method | Endpoint              | Description                  | Auth Required |
-|--------|-----------------------|------------------------------|---------------|
-| GET    | `/api/profile`        | Get user profile             | ✅ Yes |
-| PUT    | `/api/profile`        | Update user profile          | ✅ Yes |
-| GET    | `/api/links`          | Get all user links           | ✅ Yes |
-| POST   | `/api/links`          | Add a new link               | ✅ Yes |
-| PUT    | `/api/links/:id`      | Update a link                | ✅ Yes |
-| DELETE | `/api/links/:id`      | Delete a link                | ✅ Yes |
-
 ### **Referral System**
-| Method | Endpoint         | Description                          | Auth Required |
-|--------|-----------------|--------------------------------------|---------------|
-| GET    | `/api/referrals` | Get user referral list              | ✅ Yes |
-| POST   | `/api/referrals` | Generate referral link              | ✅ Yes |
-| GET    | `/api/referrals/stats` | Get referral statistics     | ✅ Yes |
+| Method | Endpoint                | Description                              | Auth Required |
+|--------|--------------------------|------------------------------------------|---------------|
+| GET    | `/api/referrals`         | Get user referral list                  | ✅ Yes |
+| GET    | `/api/referral-stats`    | Retrieve referral statistics             | ✅ Yes |
+
 
 ---
 

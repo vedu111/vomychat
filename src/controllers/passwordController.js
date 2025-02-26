@@ -25,7 +25,6 @@ exports.forgotPassword = async (req, res) => {
         });
 
         if (existingToken) {
-            // Update existing token
             await prisma.passwordResetToken.update({
                 where: { userId: user.id },
                 data: {
@@ -74,7 +73,7 @@ exports.resetPassword = async (req, res) => {
 
         await prisma.user.update({
             where: { id: resetRecord.userId },
-            data: { password: hashedPassword }
+            data: { passwordHash: hashedPassword }
         });
 
         await prisma.passwordResetToken.delete({ where: { id: resetRecord.id } });

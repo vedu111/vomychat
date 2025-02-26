@@ -24,9 +24,17 @@ const AuthController = {
       });
 
       if (referralCode) {
-        const referrer = await UserModel.findUserByUsername(referralCode);
+        console.log("Referral code used:", referralCode);
+
+        const referrer = await UserModel.findUserByReferralCode(referralCode);
+        console.log("Referrer found:", referrer);
+
         if (referrer) {
+          console.log(`Saving referral: ${referrer.id} referred ${newUser.id}`);
           await ReferralModel.createReferral(referrer.id, newUser.id);
+          console.log("Referral saved successfully!");
+        } else {
+          console.log("Invalid referral code: No matching user found.");
         }
       }
 

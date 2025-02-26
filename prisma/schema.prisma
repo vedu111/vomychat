@@ -4,16 +4,16 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL") // Ensure this is set in your .env file
+  url      = env("DATABASE_URL")
 }
 
 model User {
   id                String   @id @default(uuid())
   username          String   @unique
   email             String   @unique
-  passwordHash      String   // ✅ Ensure this exists!
+  passwordHash      String  
   referralCode      String   @unique
-  referredBy        String?  // Nullable (optional)
+  referredBy        String? 
   createdAt         DateTime @default(now())
 
   referralsSent     Referral[] @relation("UserToReferralSent")
@@ -26,8 +26,6 @@ model Referral {
   referrerId     String
   referredUserId String
   createdAt      DateTime @default(now())
-
-  // Relations (Foreign Keys correctly defined here)
   referrer     User @relation("UserToReferralSent", fields: [referrerId], references: [id])
   referredUser User @relation("UserToReferralReceived", fields: [referredUserId], references: [id])
 }
