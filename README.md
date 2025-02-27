@@ -3,6 +3,13 @@
 ## 📌 Overview
 This project is a **Linktree/Bento.me-like platform** built using **Node.js, Express.js, and PostgreSQL**, featuring a **referral system**.
 
+---
+
+## 📌 Overview Diagram
+![User Management and Referral System Overview](./image.png)
+
+---
+
 ## 🚀 Features
 - **User Authentication** (Register, Login, Forgot Password, Reset Password)
 - **Token-based Authentication (JWT)**
