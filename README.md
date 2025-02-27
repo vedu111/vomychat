@@ -1,7 +1,7 @@
 # Linktree-like Platform with Referral System
 
 ## 📌 Overview
-This project is a **Linktree/Bento.me-like platform** built using **Node.js, Express.js, and PostgreSQL**, featuring a **referral system**. It allows users to create personalized bio pages with multiple links and track referrals efficiently.
+This project is a **Linktree/Bento.me-like platform** built using **Node.js, Express.js, and PostgreSQL**, featuring a **referral system**.
 
 ## 🚀 Features
 - **User Authentication** (Register, Login, Forgot Password, Reset Password)
