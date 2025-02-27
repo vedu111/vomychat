@@ -6,7 +6,7 @@ This project is a **Linktree/Bento.me-like platform** built using **Node.js, Exp
 ---
 
 ## 📌 Overview Diagram
-![User Management and Referral System Overview](https://media-hosting.imagekit.io//20d79ea5e3c142ab/_-visual-selection.png?Expires=1835277950&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=iEwsiJEUYB~hWpb8ciDCZC6Ve-Jj1ScOcfzxYM~QxfUoa6PebUIT34AMzcxRCTdm6B6s02mPCM88e6hX95lkAGc-QwMCiiLdOVfYeJX3m2S7do8G~PomaxkExyxSsdA1WMueKmkS89R84PpMwPjQxxwXckI0RBhpJdx7id0jwuSycA8QvJVGjJMfe8qrK404fmJOR4N04kzTIC9hnLJKS0~RnsBGVnnFVrVbHO-2n5Lol-Y8266gQu3D8cvjXzU7Bzy6j6CGrlduSNWjCI6sBGDZvL7XlBG-Fi6rVhLW9zmdg-kkEFMonCxJftubntzrIKpdrzmcY5-iHfbr8om4Rw__)
+![_- visual selection](https://github.com/user-attachments/assets/54287f23-eb11-467c-bfe5-2c889082a180)
 
 ---
 
